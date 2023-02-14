@@ -140,7 +140,6 @@ header ul li.active a i {
   display: flex;
   align-items: center;
   justify-content: right;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   overflow: hidden;
@@ -310,7 +309,6 @@ header ul li.active a i {
 }
 .home .container-fluid .row .bg .content .button {
   background-color: #ffb400;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 30px;
@@ -335,6 +333,10 @@ header ul li.active a i {
 .home .container-fluid .row .bg .image {
   display: flex;
   justify-content: center;
+}
+.home .container-fluid .row .bg .image img {
+  border-radius: 50%;
+  width: 243px;
 }
 
 .mt-40 {
@@ -376,7 +378,6 @@ header ul li.active a i {
 }
 .about .container-fluid .row .about-content .button {
   background-color: #ffb400;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 30px;
@@ -718,7 +719,6 @@ header ul li.active a i {
 }
 .portfolio .container-fluid .row .button {
   background-color: #ffb400;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 30px;
@@ -800,7 +800,6 @@ header ul li.active a i {
 }
 .contact .container-fluid .row .contact-form form .contact_div .button {
   background-color: #ffb400;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 30px;
