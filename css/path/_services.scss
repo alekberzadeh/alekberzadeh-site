@@ -1,0 +1,95 @@
+.services {
+    background: var(--services-bg);
+    margin-top: 40px;
+    padding: 0 0 40px 0;
+    border-radius: 6px;
+    .container-fluid {
+        padding: 0;
+        .row {
+            .title {
+                padding: 30px 0 20px 0;
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    text-align: center;
+                    color: var(--title-h2);
+                }
+                .vector {
+                    text-align: center;
+                }
+            }
+            .services-all {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+                gap: 20px;
+                padding: 0 50px;
+                .services-box {
+                    background-color: var(--services-box-bg);
+                    padding: 30px;
+                    text-align: center;
+                    border-radius: 3px;
+                    transition: all 0.5s ease;
+                    position: relative;
+                    transform: translateZ(0);
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: #ffb400;
+                        transform: scaleX(0) scaleY(0);
+                        transform-origin: 50%;
+                        transition-property: transform;
+                        transition: 300ms ease-out;
+                    }
+                    .image {
+                        text-align: center;
+                        .white {
+                            display: none;
+                        }
+                    }
+                    h2 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        text-align: center;
+                        color: var(--title-h2);
+                        padding: 15px 0;
+                        transition: all 0.6s ease;
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        text-align: center;
+                        color: var(--services-box-p);
+                        transition: all 0.6s ease;
+                    }
+                    &:is(:hover, :focus) {
+                        .image {
+                            .white {
+                                display: inline-block;
+                            }
+                            .color-image {
+                                display: none;
+                            }
+                        }
+                        h2 {
+                            color: #fff;
+                        }
+                        p {
+                            color: #fff;
+                        }
+                    }
+                    &:hover:before {
+                        transform: scaleX(1) scaleY(1);
+                    }
+                }
+            }
+        }
+    }
+}

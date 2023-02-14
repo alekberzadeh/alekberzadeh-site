@@ -1,0 +1,156 @@
+.home {
+    position: relative;
+    background: var(--home-bg);
+    border-radius: 6px;
+    .container-fluid {
+        padding: 0;
+        .row {
+            --bs-gutter-x: 0;
+            .bg {
+                width: 100%;
+                padding: 40px 50px;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h1 {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        color: var(--title-h1);
+                        span {
+                            color: #ffb400;
+                        }
+                    }
+                    h3 {
+                        font-style: normal;
+                        font-size: 25px;
+                        text-transform: capitalize;
+                        color: var(--home-title-h3);
+                        padding: 15px 0;
+                    }
+                    .cd-words-wrapper {
+                        display: inline-block;
+                        position: relative;
+                        text-align: left;
+                        p {
+                            display: inline-block;
+                            position: absolute;
+                            white-space: nowrap;
+                            left: 0;
+                            top: 0;
+                        }
+                        p.is-visible {
+                            position: relative;
+                        }
+                    }
+                    .no-js {
+                        .cd-words-wrapper {
+                            p {
+                                opacity: 0;
+                            }
+                            p.is-visible {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .cd-headline.clip {
+                        span {
+                            display: inline-block;
+                            padding: 0.2em 0;
+                        }
+                        .cd-words-wrapper {
+                            overflow: hidden;
+                            vertical-align: top;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 2px;
+                                height: 100%;
+                                background: var(--home-h3);
+                            }
+                        }
+                        p {
+                            opacity: 0;
+                        }
+                        p.is-visible {
+                            opacity: 1;
+                        }
+                    }
+                    .icons {
+                        ul {
+                            display: flex;
+                            gap: 20px;
+                            li {
+                                background-color: #f0f0f6;
+                                border-radius: 50%;
+                                width: 30px;
+                                height: 30px;
+                                transition: all 0.3s ease;
+                                cursor: pointer;
+                                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                                a {
+                                    width: 100%;
+                                    height: 100%;
+                                    text-align: center;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    i {
+                                        color: #000;
+                                        font-size: 16px;
+                                    }
+                                }
+                                &:is(:hover, :focus) {
+                                    background-color: #ffb400;
+                                    a {
+                                        i {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .button {
+                        background-color: #ffb400;
+                        width: max-content;
+                        padding: 10px 30px;
+                        display: flex;
+                        align-items: center;
+                        color: #000;
+                        margin: 30px 0;
+                        border-radius: 4px;
+                        transition: all 0.5s ease;
+                        i {
+                            padding-left: 10px;
+                            transition: all 0.5s ease;
+                        }
+                        &:is(:hover, :focus) {
+                            color: #fff;
+                            i {
+                                color: #fff;
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+                .image {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.mt-40 {
+    margin-top: 40px;
+}

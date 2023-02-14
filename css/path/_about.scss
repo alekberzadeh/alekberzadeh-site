@@ -1,0 +1,129 @@
+.about {
+    background: var(--about-bg);
+    margin-top: 40px;
+    border-radius: 6px;
+    .container-fluid {
+        padding: 0;
+        .row {
+            .title {
+                padding: 30px 0 20px 0;
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    text-align: center;
+                    color: var(--title-h2);
+                }
+                .vector {
+                    text-align: center;
+                }
+            }
+            .about-content {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 50px;
+                .text {
+                    p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: var(--p);
+                        text-align: justify;
+                    }
+                }
+                .button {
+                    background-color: #ffb400;
+                    width: max-content;
+                    padding: 10px 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #000;
+                    margin: 30px 0;
+                    border-radius: 4px;
+                    transition: all 0.5s ease;
+                    i {
+                        padding-left: 10px;
+                        transition: all 0.5s ease;
+                    }
+                    &:is(:hover, :focus) {
+                        color: #fff;
+                        i {
+                            color: #fff;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                .skill {
+                    padding: 0 50px;
+                    p {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: var(--p);
+                    }
+                    ul {
+                        padding: 5px 0;
+                        li {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: var(--p);
+                            padding: 0 0 5px 0;
+                            a {
+                                color: var(--p);
+                            }
+                            i {
+                                color: #ffb400;
+                            }
+                        }
+                    }
+                }
+            }
+            .skill-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 40px;
+                width: 100%;
+                background: var(--about-bg);
+                border-top: 1px solid #ccc;
+                padding: 20px 30px 50px 30px;
+                .icon {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background: #f0f0f6;
+                    margin: 0 20px;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        display: flex;
+                        border-radius: 50%;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.5s ease;
+                        img {
+                            width: 55%;
+                            transition: all 0.5s ease;
+                        }
+                        &:is(:hover, :focus) {
+                            img {
+                                transform: scale(1.1);
+                            }
+                            background: #ffb400;
+                        }
+                    }
+                    .title-icon {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        text-align: center;
+                        color: var(--p);
+                    }
+                }
+            }
+        }
+    }
+}

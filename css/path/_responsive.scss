@@ -1,0 +1,194 @@
+@media screen and (max-width: 1200px) {
+    header {
+        display: none;
+    }
+    .toggle-theme {
+        position: absolute;
+        width: initial;
+        top: 7%;
+        right: 25px;
+        .theme {
+            background: #fff;
+        }
+    }
+    .language {
+        position: absolute;
+        top: 10%;
+        width: initial;
+        .menu {
+            background: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mt-40{
+        margin-top: 20px;
+    }
+    .home {
+        .container-fluid {
+            .row {
+                .bg {
+                    .content {
+                        align-items: center;
+                        h1 {
+                            font-size: 35px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        .container-fluid {
+            .row {
+                --bs-gutter-x: 0;
+                .about-content {
+                    padding: 0 20px;
+                    .skill {
+                        padding: 0 0 20px 0;
+                    }
+                }
+                .skill-icon {
+                    padding: 20px 20px 50px 20px;
+                    .icon {
+                        margin: 5px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        .container-fluid {
+            .row {
+                --bs-gutter-x: 0;
+                .services-all {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+
+    .experience {
+        .container-fluid {
+            .row {
+                --bs-gutter-x: 0;
+                .title {
+                    padding: 30px 0 0 0;
+                }
+                .experience-all {
+                    padding: 0 20px;
+                    .experience-box {
+                        align-items: flex-start;
+                        .data {
+                            width: 80%;
+                        }
+                        .content {
+                            padding: 10px 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        .container-fluid {
+            .row {
+                --bs-gutter-x: 0;
+                .portfolio-all {
+                    padding: 0 20px;
+                    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+                }
+            }
+        }
+    }
+
+    .contact{
+        .container-fluid{
+            .row{
+                .contact-form{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-theme {
+        right: 5px;
+    }
+
+    .language {
+        right: 5px;
+    }
+
+    .home {
+        .container-fluid {
+            .row {
+                .bg {
+                    padding: 40px 20px;
+                }
+            }
+        }
+    }
+
+    .experience {
+        .container-fluid {
+            .row {
+                .experience-all {
+                    .experience-box {
+                        gap: 10px;
+                        .data {
+                            width: 100%;
+                            h2 {
+                                font-size: 16px;
+                            }
+                            span {
+                                font-size: 11px;
+                                padding: 5px;
+                            }
+                        }
+                        .content {
+                            h2 {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        .container-fluid{
+            .row{
+                .contact-form{
+                    form{
+                        .contact_div{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .toggle-theme {
+        .theme {
+            background: #f0f0f6;
+        }
+    }
+    .language {
+        .menu {
+            background: #f0f0f6;
+        }
+    }
+}
